@@ -179,7 +179,8 @@ void loop() {
     // Send SMS or make a call using GSM module
     GSM_SoftSerial.println("AT+CMGF=1"); // Set GSM module to SMS mode
     delay(1000);
-    GSM_SoftSerial.println("AT+CMGS=\"+918815088910\""); // Replace with the phone number you want to text
+    GSM_SoftSerial.println("AT+CMGS=\"+91XXXXXXXXX
+      \""); // Replace with the phone number you want to text
     delay(1000);
     GSM_SoftSerial.print("Accident detected! Latitude: ");
     GSM_SoftSerial.print(lat_val, 6);
